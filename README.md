@@ -38,9 +38,10 @@ About using this on an anti-cheat protected game. Let's talk about EAC since it'
 
 # References
 I cannot remember every single one off the top of my head, but i'll try:
-  - https://github.com/wbenny/hvpp
-  - https://git.back.engineering/_xeroxz/bluepill
-  - https://www.unknowncheats.me/forum/anti-cheat-bypass
+  - https://github.com/wbenny/hvpp | Generic
+  - https://github.com/jonomango/hv | Generic
+  - https://git.back.engineering/_xeroxz/bluepill | Custom IDT,GDT,PT
+  - https://www.unknowncheats.me/forum/anti-cheat-bypass | Generic
 
 # Last Words
 In case you're trying to debug this (including VMXROOT), then i'd recommend using serial ports for logging. I haven't done it with a physical machine but i can talk about proxmox, logging worked fine with a virtual serial port and outputting data with `__outbyte` intrinsic. However for some reason, VMWARE doesn't seem to receive any input on its serial ports when directly writing to them using `__outbyte`. That could've been a configuration issue on my side though. KVM works out of the box.<br/><br/>
