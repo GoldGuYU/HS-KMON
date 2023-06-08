@@ -12,6 +12,7 @@ Following components are included in this repo:
   - KMON | Kernel Monitor component handling hooks and OS level things (standalon/isolated from the HV).
 
 # Features
+  - Basic PE Image Mapper (NOCRT only).
   - Shadow Page Interface and Manager for faked pages (supports multiple).
   - Hooking library with implementation of both normal and EPT-assisted.
   - Left over hooks for `EasyAntiCheat.sys`
@@ -40,6 +41,7 @@ About using this on an anti-cheat protected game. Let's talk about EAC since it'
 I cannot remember every single one off the top of my head, but i'll try:
   - https://github.com/wbenny/hvpp | Generic
   - https://github.com/jonomango/hv | Generic
+  - https://github.com/eddeeh/kdmapper | PE Mapper Relocations 🤯
   - https://git.back.engineering/_xeroxz/bluepill | Custom IDT,GDT,PT
   - https://www.unknowncheats.me/forum/anti-cheat-bypass | Generic
 
