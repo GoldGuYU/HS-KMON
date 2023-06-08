@@ -43,5 +43,5 @@ I cannot remember every single one off the top of my head, but i'll try:
   - https://www.unknowncheats.me/forum/anti-cheat-bypass
 
 # Last Words
-In case you're trying to debug this (including VMXROOT), then i'd recommend using serial ports for logging. I haven't done it with a physical machine but i can talk about proxmox, logging worked fine with a virtual serial port and outputting data with `__outbyte` intrinsic. However for some reason, VMWARE doesn't seem to receive any input on its serial ports when directly writing to the serial port using `__outbyte`. That could've been a configuration issue on my side though. KVM works out of the box.<br/><br/>
+In case you're trying to debug this (including VMXROOT), then i'd recommend using serial ports for logging. I haven't done it with a physical machine but i can talk about proxmox, logging worked fine with a virtual serial port and outputting data with `__outbyte` intrinsic. However for some reason, VMWARE doesn't seem to receive any input on its serial ports when directly writing to them using `__outbyte`. That could've been a configuration issue on my side though. KVM works out of the box.<br/><br/>
 If you want to actually use a debugger and not just have logs, check out this one: https://www.triplefault.io/2017/07/setup-vmm-debugging-using-vmwares-gdb_9.html
